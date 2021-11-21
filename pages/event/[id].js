@@ -5,6 +5,7 @@ import {withRouter} from 'next/router'
 
 const index = (props) => {
     const {id} = props.router.query
+    // eslint-disable-next-line
     const {data} = useContext(Events)
     return (
         <>

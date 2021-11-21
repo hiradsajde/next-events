@@ -2,6 +2,7 @@ import Event from "../components/ui/event/event"
 import Events from "../contexts/events"
 import { useContext } from "react"
 const index = () => {
+    // eslint-disable-next-line
     const { data } = useContext(Events)
     return (
         data.map((props,num) => {
