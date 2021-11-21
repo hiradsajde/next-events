@@ -9,7 +9,7 @@ const Menu = () => {
                 </ul>
             </div>
             <div className={style.logo}>
-                <img src="/logo.png"/>
+                <Link href='/'><img src="/logo.png"/></Link>
             </div>
             <div className={style.button}>پنل کاربری</div>
         </div>
