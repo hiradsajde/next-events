@@ -1,9 +1,10 @@
 import Event from "../components/ui/event/event"
-import events from "../contexts/events"
-
+import Events from "../contexts/events"
+import { useContext } from "react"
 const index = () => {
+    const { data } = useContext(Events)
     return (
-        events.map((props,num) => {
+        data.map((props,num) => {
             (num % 2 == 0) ? props.right = true : props.right = false
             props.id = num
             return <Event {...props} key={num}/>

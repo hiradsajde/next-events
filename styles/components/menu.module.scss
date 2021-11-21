@@ -3,7 +3,7 @@
     height: 60px;
     display: flex;
     justify-content: space-between;
-    margin: 15px 0px;
+    margin: 15px auto;
     .logo {
         img{
             width: 31px;
@@ -40,6 +40,14 @@
                     cursor: pointer;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width : 1680px){
+    .menu{
+        .items{
+            display: none;
         }
     }
 }

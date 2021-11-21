@@ -1,4 +1,6 @@
-const events = [
+import React from "react"
+
+const datas = [
     {
         title : "کنفرانس بین المللی سوشال مارکتینگ",
         description : "در این کنفرانس قرار است به روش های جذب مخاطب از طریق فیسبوک بیزینس بپردازیم و ببینم کی به کیه و چی به چیه و مخاطب جمع کنیم و با فیسبوک یاد بگیریم کار کنیم",
@@ -16,4 +18,6 @@ const events = [
     },
 ]
 
-export default events
+const Events = React.createContext({data : datas})
+
+export default Events

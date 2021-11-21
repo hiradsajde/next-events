@@ -1,14 +1,15 @@
 .detail {
     width: 100%;
+    --width-of : 500px;
     .title{
         font-size: 32px;
         text-align: center;
         font-weight: 400;
         margin: 50px auto;
-        width: 500px;
+        width: var( --width-of);
     }
     .image{
-        width: 500px;
+        width: var(--width-of);
         height: 250px;
         margin: auto;
         img{
@@ -18,8 +19,17 @@
         }
     }
     .text{
-        width: 500px;
+        width: var(--width-of);
         font-size: 16px;
         margin: 50px auto;
+    }
+}
+
+@media screen and (max-width : 500px){
+    .detail{
+        --width-of : calc(100% - 30px);
+        .title{
+            padding: 0px;
+        }
     }
 }
