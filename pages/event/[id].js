@@ -1,10 +1,9 @@
 import Detail from "../../components/ui/event/detail"
 import events from "../../contexts/events"
-import {useRouter} from 'next/router'
+import {withRouter} from 'next/router'
 
-const index = () => {
-    const router = useRouter()
-    const {id} = router.query
+const index = (props) => {
+    const {id} = props.router.query
     return (
         <>
             {id && <Detail
@@ -16,4 +15,4 @@ const index = () => {
     )
 }
 
-export default index
+export default withRouter(index)

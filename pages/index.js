@@ -6,7 +6,7 @@ const index = () => {
         events.map((props,num) => {
             (num % 2 == 0) ? props.right = true : props.right = false
             props.id = num
-            return <Event {...props}/>
+            return <Event {...props} key={num}/>
         })
     )
 }
