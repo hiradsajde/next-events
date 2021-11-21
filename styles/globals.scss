@@ -1,0 +1,17 @@
+@import 'variables';
+
+body{
+  direction: rtl;
+}
+
+.container {
+  width: var(--container-width);
+  margin: auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background-color : #1a1a1a;
+}
