@@ -1,6 +1,7 @@
 import Event from "../components/ui/event/event"
 import Events from "../contexts/events"
-import { useContext } from "react"
+import dynamic from 'next/dynamic'
+import { useContext , useEffect , useState} from "react"
 const index = () => {
     // eslint-disable-next-line
     const { data } = useContext(Events)
