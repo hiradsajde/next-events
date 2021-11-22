@@ -12,7 +12,7 @@ const favorites = () => {
     // eslint-disable-next-line
     useEffect(() => {
         SetWidth(window.innerWidth)
-        SetLikes(localStorage.getItem("like"))
+        SetLikes(localStorage.getItem("like") ?? [])
     })
     const res = data.filter((value,i) => {
         return likes.includes(value.id)
