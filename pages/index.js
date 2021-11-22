@@ -1,11 +1,12 @@
 import Event from "../components/ui/event/event"
 import Events from "../contexts/events"
-import dynamic from 'next/dynamic'
 import { useContext , useEffect , useState} from "react"
 const index = () => {
     // eslint-disable-next-line
     const { data } = useContext(Events)
+    // eslint-disable-next-line
     const [width , SetWidth] = useState('')
+    // eslint-disable-next-line
     useEffect(() => {
         SetWidth(window.innerWidth)
     })
