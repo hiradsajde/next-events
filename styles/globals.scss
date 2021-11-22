@@ -1,8 +1,11 @@
 @import 'variables';
 
+* {
+  font-family: iranyekan !important;
+}
+
 body{
   direction: rtl;
-  font-family: iranyekan  !important;
   margin: 0px;
   padding: 0px;
 }
