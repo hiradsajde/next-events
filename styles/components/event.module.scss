@@ -83,6 +83,11 @@
         display: block;
         padding: 0px;
         margin: 10px auto !important;
+        &.rtl{
+            .text{
+                padding: 5px 0px 0px 5px!important;
+            } 
+        }
         .text{
             max-width: calc(100% - 10px) !important;
         }
