@@ -1,6 +1,8 @@
 import style from './../../../styles/components/detail.module.scss'
 import { useState } from 'react'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart , faHeartBroken } from '@fortawesome/free-solid-svg-icons'
+import {faHeart as farHeart} from '@fortawesome/free-regular-svg-icons'
 const Detail = (props) => {
     //eslint-disable-next-line
     const likes = JSON.parse(localStorage.getItem('like')) ?? []
@@ -30,7 +32,11 @@ const Detail = (props) => {
             </div>
             <p className={style.text}>{props.text}</p>
             <div className={style.bottom}>
-                <div className={style.like} onClick={click}>{like ? '♥' : '♡'}</div>
+                <div className={style.like} onClick={click}>{like ? (
+                    <FontAwesomeIcon icon={faHeart} />
+                ) : (
+                    <FontAwesomeIcon icon={farHeart}/>
+                )}</div>
             </div>
         </div>
     )
