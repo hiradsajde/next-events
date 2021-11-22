@@ -85,14 +85,21 @@
         margin: 10px auto !important;
         &.rtl{
             .text{
-                padding: 5px 0px 0px 5px!important;
+                padding: 5px 5px 5px 5px !important;
             } 
         }
         .text{
             max-width: calc(100% - 10px) !important;
+            padding: 5px 5px 5px 5px !important;
+            h1 {
+                width: 100% !important;
+            }
+            p {
+                padding: 5px 5px 5px 10px !important;
+            }
         }
         .image{
-            width: 100%;
+            max-width: calc(100% - 10px);
             height: 200px;
             margin-top: 30px;
             img {
