@@ -18,6 +18,10 @@ const datas = [
     },
 ]
 
+for(const id in datas){
+    datas[id].id = id
+}
+
 const Events = React.createContext({data : datas})
 
 export default Events

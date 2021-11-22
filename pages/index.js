@@ -18,7 +18,6 @@ const index = () => {
             else{
                 props.right = false
             }
-            props.id = num
             return <Event {...props} key={num}/>
         })
     )

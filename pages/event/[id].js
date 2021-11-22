@@ -13,6 +13,7 @@ const index = (props) => {
                 title = {data[id].title}
                 image = {data[id].image}
                 text = {data[id].description}
+                id = {data[id].id}
             />}
         </>
     )

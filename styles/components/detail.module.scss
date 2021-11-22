@@ -23,6 +23,22 @@
         font-size: 16px;
         margin: 50px auto;
     }
+    .bottom{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .like {
+            width: 50px;
+            height: 50px;
+            border-radius: 15px;
+            border: 1px solid #1a1a1a;
+            display: flex;
+            font-weight: 700;
+            font-size: 22px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
 @media screen and (max-width : 500px){
