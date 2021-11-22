@@ -5,9 +5,18 @@ import { useContext , useEffect , useState} from "react"
 const index = () => {
     // eslint-disable-next-line
     const { data } = useContext(Events)
+    const [width , SetWidth] = useState('')
+    useEffect(() => {
+        SetWidth(window.innerWidth)
+    })
     return (
         data.map((props,num) => {
-            (num % 2 == 0) ? props.right = true : props.right = false
+            if(width > 1680){
+                (num % 2 == 0) ? props.right = true : props.right = false
+            }
+            else{
+                props.right = false
+            }
             props.id = num
             return <Event {...props} key={num}/>
         })
