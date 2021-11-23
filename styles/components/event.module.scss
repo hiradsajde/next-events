@@ -3,9 +3,10 @@
     min-height: 300px;
     margin: auto;
     border-radius: 15px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    // box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     &:not(:nth-child(1)){
         margin: 50px auto;
     }
@@ -38,11 +39,14 @@
         clear: both;
         .title {
             font-size: 30px;
-            // text-decoration: underline;
             margin: 5px;
             &:hover{
                 cursor: pointer;
             }
+        }
+        p {
+            margin-right: 5px;
+            font-size: 18px;
         }
         .time {
             width: 100%;
@@ -68,6 +72,7 @@
                 align-items: center;
                 background : var(--main-second-color);
                 color: var(--text-second-color);
+                margin-right: 5px;
                 &:hover{
                     cursor: pointer;
                 }

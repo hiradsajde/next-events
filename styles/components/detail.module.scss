@@ -3,8 +3,8 @@
     --width-of : 500px;
     .title{
         font-size: 32px;
+        font-weight: 700;
         text-align: center;
-        font-weight: 400;
         margin: 50px auto;
         width: var( --width-of);
     }
@@ -33,7 +33,6 @@
             border-radius: 15px;
             border: 1px solid #1a1a1a;
             display: flex;
-            font-weight: 700;
             font-size: 22px;
             justify-content: center;
             align-items: center;
